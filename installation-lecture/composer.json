@@ -1,0 +1,25 @@
+{
+    "name": "dory.azar/caligrafy",
+    "description": "PHP MVC framework",
+    "keywords": ["php", "framework", "mvc", "laravel", "light", "model", "view", "controller", "ai", "bot", "payment", "cryptocurrency"],
+    "type": "framework",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dory Azar",
+            "email": "dory.azar@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0",
+        "pug-php/pug": "^3.2",
+        "vlucas/phpdotenv": "^3.3",
+        "wixel/gump": "dev-master",
+        "claviska/simpleimage": "dev-master",
+        "stripe/stripe-php": "6.*",
+        "coinbase/coinbase-commerce": "dev-master",
+        "phpmailer/phpmailer": "6.*",
+        "phug/phug": "^1.0@dev"
+    }
+}
