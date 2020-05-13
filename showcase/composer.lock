@@ -51,12 +51,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/coinbase/coinbase-commerce-php.git",
-                "reference": "126deb154f28276ae33b1aa20fe8b0152920075b"
+                "reference": "5e80d667d2f8ba6ef0da78fde02d501a06c3fdb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coinbase/coinbase-commerce-php/zipball/126deb154f28276ae33b1aa20fe8b0152920075b",
-                "reference": "126deb154f28276ae33b1aa20fe8b0152920075b",
+                "url": "https://api.github.com/repos/coinbase/coinbase-commerce-php/zipball/5e80d667d2f8ba6ef0da78fde02d501a06c3fdb4",
+                "reference": "5e80d667d2f8ba6ef0da78fde02d501a06c3fdb4",
                 "shasum": ""
             },
             "require": {
@@ -87,7 +87,7 @@
                 "ethereum",
                 "litecoin"
             ],
-            "time": "2020-04-21T18:16:20+00:00"
+            "time": "2020-05-05T01:29:28+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1244,12 +1244,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "bcc694d2fd261b2a8fd4300e3045ad0ea719140c"
+                "reference": "429e96b40ffa376b77e34e793cd8d47e636e2923"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/bcc694d2fd261b2a8fd4300e3045ad0ea719140c",
-                "reference": "bcc694d2fd261b2a8fd4300e3045ad0ea719140c",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/429e96b40ffa376b77e34e793cd8d47e636e2923",
+                "reference": "429e96b40ffa376b77e34e793cd8d47e636e2923",
                 "shasum": ""
             },
             "require": {
@@ -1312,7 +1312,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2020-05-04T11:09:26+00:00"
+            "time": "2020-05-08T10:39:41+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

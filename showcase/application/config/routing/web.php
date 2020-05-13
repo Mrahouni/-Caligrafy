@@ -27,6 +27,8 @@ try {
     // Route::get('/helloworld', function() { echo "Hello World"; });
 
 
+    // Route::get('/pugPage','PageController');
+
     Route::get('/','ProjectController');
     Route::get('/{id}','ProjectController@readProject');
     Route::get('/{id}/edit','ProjectController@updateProject');

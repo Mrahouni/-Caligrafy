@@ -1,0 +1,17 @@
+extends ../default/master/layoutblocks
+block content
+  .spacer-4
+  .wrapper.bounded-large.equally-spaced-1.content-section
+  each $project in $projects
+   .col-sm-6.col-md-4
+    .card.color0.equally-spaced-1.height-fixed.dropshadow
+	 .card-image(style="background-image:url('#{$project->image_url}')")
+	  .spacer-4
+	   h2.medium-text.semibold.textcolor5.reset-margin  #{(strtolower($project->title))}
+	    .small-text.textcolor3 #{strtoupper($project->category)}
+		 .wrapper.reset-margin
+		  p.textcolor5.default-text.block-with-text #{$project->short_description }
+		   .spacer-1 
+		    .small-text.textcolor3 by #{$project->user()->username}
+			.small-text.textcolor3 #{getRelativeTime($project->modified_at)}
+		   .spacer-1 

@@ -10,12 +10,16 @@ class ProjectController extends Controller {
         $this->associate('Project','projects');
         $projects = $this->all()?? array();
 
+        return view('showcase/index',array('projects'=>$projects));
+        /*
         foreach ($projects as $key => $project)
         {
             echo'Project'.($key+1);
             echo'<br>';
             dump($project);
         }
+        */
+
     }
     
     public function readProject()
