@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="991f3d19-6d6e-45ef-8468-0dda09beb5d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/application/controllers/showcase/PageController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
@@ -32,20 +31,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/config/routing/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+            <state relative-caret-position="221">
+              <caret line="35" column="55" lean-forward="true" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
               <folding>
                 <element signature="e#125#144#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/showcase/create_projects.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -59,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/showcase/ProjectController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+            <state relative-caret-position="96">
+              <caret line="36" column="47" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -71,17 +61,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="648" lean-forward="true" selection-start-line="648" selection-end-line="648" selection-end-column="16" />
+            <state relative-caret-position="173">
+              <caret line="333" column="9" selection-start-line="333" selection-start-column="6" selection-end-line="333" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/showcase/PageController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="9" selection-start-line="9" selection-end-line="14" selection-end-column="15" />
+            <state relative-caret-position="178">
+              <caret line="36" column="62" selection-start-line="36" selection-start-column="62" selection-end-line="36" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -91,6 +81,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>block-</find>
+      <find>form</find>
+      <find>btn</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -102,10 +94,10 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/application/models/showcase/Project.php" />
         <option value="$PROJECT_DIR$/application/models/showcase/create_projects.sql" />
-        <option value="$PROJECT_DIR$/application/controllers/showcase/PageController.php" />
-        <option value="$PROJECT_DIR$/application/config/routing/web.php" />
         <option value="$PROJECT_DIR$/public/css/styles.css" />
+        <option value="$PROJECT_DIR$/application/config/routing/web.php" />
         <option value="$PROJECT_DIR$/application/controllers/showcase/ProjectController.php" />
+        <option value="$PROJECT_DIR$/application/controllers/showcase/PageController.php" />
       </list>
     </option>
   </component>
@@ -165,7 +157,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -202,23 +193,33 @@
               <item name="showcase" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="showcase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="showcase" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="showcase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="showcase" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="showcase" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="showcase" type="b2602c69:ProjectViewProjectNode" />
               <item name="showcase" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="showcase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="showcase" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -231,6 +232,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp1\htdocs\examples_tuto\Caligrafy\showcase\application\views\showcase" />
       <recent name="C:\xampp1\htdocs\examples_tuto\Caligrafy\showcase\application\controllers\showcase" />
       <recent name="C:\xampp1\htdocs\examples_tuto\Caligrafy\showcase\application\models\showcase" />
     </key>
@@ -260,17 +262,39 @@
       <workItem from="1588690943649" duration="304000" />
       <workItem from="1588759516971" duration="23704000" />
       <workItem from="1588937808763" duration="8444000" />
+      <workItem from="1589361927944" duration="18359000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32452000" />
+    <option name="totallyTimeSpent" value="50811000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="2" width="1378" height="733" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2572079" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26100153" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32888147" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26100153" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -289,7 +313,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -324,13 +348,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/showcase/create_projects.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/showcase/Project.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -338,34 +355,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="333" column="9" selection-start-line="333" selection-start-column="6" selection-end-line="333" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/showcase/create_projects.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/config/routing/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+        <state relative-caret-position="221">
+          <caret line="35" column="55" lean-forward="true" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
           <folding>
             <element signature="e#125#144#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/styles.css">
+    <entry file="file://$PROJECT_DIR$/application/controllers/showcase/ProjectController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="648" lean-forward="true" selection-start-line="648" selection-end-line="648" selection-end-column="16" />
+        <state relative-caret-position="96">
+          <caret line="36" column="47" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/showcase/PageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="9" selection-start-line="9" selection-end-line="14" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/showcase/ProjectController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+        <state relative-caret-position="178">
+          <caret line="36" column="62" selection-start-line="36" selection-start-column="62" selection-end-line="36" selection-end-column="62" />
         </state>
       </provider>
     </entry>

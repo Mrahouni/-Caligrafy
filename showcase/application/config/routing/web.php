@@ -30,6 +30,12 @@ try {
     // Route::get('/pugPage','PageController');
 
     Route::get('/','ProjectController');
+    Route::get('/new','PageController@showcaseForm');
+    Route::post('/new','PageController@add');
+    Route::put('/{id}/new','PageController@update');
+    Route::delete('/{id}/new','PageController@delete');
+
+
     Route::get('/{id}','ProjectController@readProject');
     Route::get('/{id}/edit','ProjectController@updateProject');
     Route::get('/{id}/delete','ProjectController@deleteProject');

@@ -1,0 +1,59 @@
+extends ../default/master/layoutblocks
+block content
+   - $title = $project->title ?? ''
+   - $category = $project->category ?? ''
+   .spacer-4
+     form(id="showcase_form",method="POST",enctype="multipart/form-data")
+	 if $put
+	 =methodField('PUT')
+     =csrf()
+	 .wrapper.card.color0.bounded-xlarge.content-section.equaly-spaced-1.dropshadow.horizontal-center
+		  .horizontal-left
+			if $error
+			  include ../default/modules/messaging
+			.spacer-2
+			  .form-group
+			  label(for='title',class='textcolor5')  title
+			  if isset($errors['title'])
+				p(class='error') = $errors['title']
+			  input(type='text',name='title',class='form-control input-default',placeholder='Enter title',maxlenght='18',value="{$title}",required)
+			  
+			  .form-group
+			  label(for='category',class='textcolor5')  category
+			  if isset($errors['category'])
+				p(class='error') = $errors['category']
+			  input(type='text',name='category',class='form-control input-default',placeholder='Enter category',maxlenght='18',value="{$category}",required)
+			   
+			  .form-group
+			  label(for='short_description',class='textcolor5')  short_description
+			  if isset($errors['short_description'])
+				p(class='error') = $errors['short_description']
+			  textarea(name='short_description',id='short_description',class='form-control',placeholder='Enter short description',maxlenght='200',rows='4',required) =$project->short_description ?? ''
+			   
+			  .form-group
+			  label(for='description',class='textcolor5')  description
+			  if isset($errors['description'])
+				p(class='error') = $errors['description']
+			  textarea(name='description',id='description',class='form-control',placeholder='Enter  description',maxlenght='200',rows='4',required)	=$project->description ?? ''
+			  
+			  if !$put
+				  .form-group
+				  label(for='image_url',class='textcolor5')  image_url
+				  if isset($errors['image_url'])
+					p(class='error') = $errors['image_url']
+				  input(type='file',id='image_url',name='image_url',class='form-control input-default',accept='image/*',required)
+			  
+			  .form-group
+				button.btn.btn-primary(type='submit') Save
+
+			if $put
+			   form(id="delete_form",method="POST",enctype="multipart/form-data")
+			      =methodField('DELETE')
+				  =csrf()
+               	   button.btn.btn-link(type='submit') Delete
+			 
+
+              
+
+
+			

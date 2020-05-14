@@ -35,7 +35,7 @@ class ProjectController extends Controller {
     {
         $this->associate('Project','projects');
         $parameters=$this->request->parameters;
-        // dump($parameters);
+        //dump($parameters);exit;
         $project = new Project();
         $project->title= $parameters['title'] ?? 'no';
         $project->category= $parameters['category'] ?? 'no';
