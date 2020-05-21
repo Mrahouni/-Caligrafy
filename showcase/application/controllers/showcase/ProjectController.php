@@ -7,10 +7,15 @@ class ProjectController extends Controller {
     
     public function index()
     {
+        if(!authorized()){
+            redirect('/login');
+        }
+        else{
         $this->associate('Project','projects');
         $projects = $this->all()?? array();
 
-        return view('showcase/index',array('projects'=>$projects));
+        return view('showcase/index',array('projects'=>$projects,'metadata'=>metadata(),'social'=>true));
+        }
         /*
         foreach ($projects as $key => $project)
         {

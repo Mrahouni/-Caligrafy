@@ -19,7 +19,7 @@ try {
     
     
     // AUTHENTICATION - Remove comment if you have an authentication implemented
-    //Auth::authentication('User', 'users');
+    Auth::authentication('User', 'users');
 
 
     // ROUTE DEFINITION: get, post, put and delete
@@ -27,28 +27,31 @@ try {
     // Route::get('/helloworld', function() { echo "Hello World"; });
 
 
-    // Route::get('/pugPage','PageController');
+    Route::get('/','PageController');
+    Route::get('/paycredit','PaymentController@chargeCredit');
+    Route::get('/paycrypto','PaymentController@chargeCrypto');
+    Route::get('/getCharges','PaymentController@getCharges');
+    Route::get('/getChargesStatus/{id}/status','PaymentController@getChargesStatus');
 
-    Route::get('/','ProjectController');
     Route::get('/new','PageController@showcaseForm');
     Route::post('/new','PageController@add');
     Route::put('/{id}/new','PageController@update');
     Route::delete('/{id}/new','PageController@delete');
 
-
-    Route::get('/{id}','ProjectController@readProject');
-    Route::get('/{id}/edit','ProjectController@updateProject');
-    Route::get('/{id}/delete','ProjectController@deleteProject');
-    Route::get('/admin/create','ProjectController@addProject');
+    // Route::get('/','ProjectController');
+    // Route::get('/{id}','ProjectController@readProject');
+    // Route::get('/{id}/edit','ProjectController@updateProject');
+    // Route::get('/{id}/delete','ProjectController@deleteProject');
+    // Route::get('/admin/create','ProjectController@addProject');
     
     // Auth Routes - Uncomment only if AUTHENTICATION activated above
-    //Route::get('/home', 'AuthController@home');
-    //Route::get('/login', 'AuthController');
-    //Route::get('/logout', 'AuthController@logout');
-	//Route::get('/notAuthorized', 'AuthController@notAuthorized');
-    //Route::get('/register', 'AuthController@registerForm');
-    //Route::post('/login', 'AuthController@login');
-    //Route::post('/register', 'AuthController@register');
+    Route::get('/home', 'AuthController@home');
+    Route::get('/login', 'AuthController');
+    Route::get('/logout', 'AuthController@logout');
+	Route::get('/notAuthorized', 'AuthController@notAuthorized');
+    Route::get('/register', 'AuthController@registerForm');
+    Route::post('/login', 'AuthController@login');
+    Route::post('/register', 'AuthController@register');
     
     // Face Detect - Uncomment only if you want to build face detection
     Route::get('/facedetect', function() { return view('Client/app', array('facedetect' => 'index'));});

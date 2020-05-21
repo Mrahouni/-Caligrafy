@@ -7,12 +7,24 @@ class PageController extends Controller {
     
     public function index()
     {
+        if(!authorized()){
+            redirect('/login');
+        }
+        else{
+            $this->associate('Project','projects');
+            $projects = $this->all()?? array();
+
+            return view('showcase/index',array('projects'=>$projects,'metadata'=>metadata(),
+                'social'=>true,'google_analytics'=>true));
+        }
+        /*
         return view('showcase/index',array('title'=>'Hello form pug',
             'heading'=>'heading 1',
             'h1'=>'heading 2',
             'heading2'=>' section heading ',
             'paragraphe'=>' paragraphe'
             ));
+        */
     }
 
     public function showcaseForm()
@@ -22,8 +34,14 @@ class PageController extends Controller {
 
     public function add()
     {
+        if(!authorized()){
+            redirect('/login');
+        }
+        else{
+
         $this->associate('Project','projects');
         $parameters=$this->request->parameters;
+        $userInput=(Object)$parameters;
 
         $validate=$this->validator->check($parameters,array('title'=>'required | max_len,20',
             'category'=>'required ',
@@ -34,7 +52,10 @@ class PageController extends Controller {
         if($validate !==true) {
             return view('showcase/add',array('error'=>true,
                 'status'=>'danger','message_header'=>'Whooops ,something went wrong',
-                'message'=>'Some of the inputs are invalid . Make sure are all the required inputs entered properly '))  ;
+                'message'=>'Some of the inputs are invalid . Make sure are all the required inputs entered properly ',
+                'errors'=>$validate,
+                'project'=>$userInput));
+            exit;
         }
 
         $file=$this->request->files('image_url');
@@ -51,6 +72,7 @@ class PageController extends Controller {
         $project->user_id= $parameters['user_id'] ?? 1;
         $this->save($project);
         redirect('/');
+        }
 
     }
 
